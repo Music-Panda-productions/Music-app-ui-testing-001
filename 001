@@ -1,0 +1,49 @@
+// HTML structure for the music app UI
+const appUI = `
+<div class="container">
+  <header>
+    <h1>My Music App</h1>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Search</li>
+        <li>Library</li>
+        <li>Profile</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="music-player">
+      <img src="album-artwork.jpg" alt="Album Artwork">
+      <div class="song-info">
+        <h2>Song Title</h2>
+        <h3>Artist Name</h3>
+      </div>
+      <div class="controls">
+        <button class="play">Play</button>
+        <button class="next">Next</button>
+      </div>
+    </section>
+    <section class="playlist">
+      <h2>My Playlist</h2>
+      <ul>
+        <li>Song 1</li>
+        <li>Song 2</li>
+        <li>Song 3</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 My Music App. All rights reserved.</p>
+  </footer>
+</div>
+`;
+
+// App initialization
+function initializeApp() {
+  const appContainer = document.getElementById('app');
+  appContainer.innerHTML = appUI;
+}
+
+// Call the initializeApp function when the DOM is ready
+document.addEventListener('DOMContentLoaded', initializeApp);
